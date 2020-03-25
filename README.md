@@ -1,4 +1,4 @@
-# yousee-musik-til-windows
+# Yousee Musik til Windows
 Uofficiel app til at lytte til Yousee Musik på din windows pc.
 
 - Understøtter windows media controls
