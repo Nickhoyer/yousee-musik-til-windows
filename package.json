@@ -1,0 +1,48 @@
+{
+  "name": "yousee.musik",
+  "version": "1.0.0",
+  "description": "Wrapper for https://musik.yousee.dk",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "electron-builder install-app-deps",
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "type": "module",
+  "author": "Nickolas Høyer-Larsen",
+  "license": "ISC",
+  "build": {
+    "win": {
+      "target": "appx",
+      "icon": "assets/logo.png",
+      "publisherName": "Nickolas Høyer-Larsen"
+    },
+    "appx": {
+      "applicationId": "yousee.musik",
+      "displayName": "YouSee Musik til Windows (uofficiel)",
+      "identityName": "35137NickolasHyer-Larsen.YouSeeMusiktilWindowsuoff",
+      "publisher": "CN=3E97C0E5-FC38-4091-B36A-17D00B9489DB",
+      "publisherDisplayName": "Nickolas Høyer-Larsen",
+      "languages": [
+        "da-DK"
+      ]
+    },
+    "extraResources": [
+      "./assets/**"
+    ]
+  },
+  "devDependencies": {
+    "electron": "^8.1.1",
+    "electron-builder": "^22.4.1",
+    "electron-reload": "^1.5.0",
+    "esm": "^3.2.25"
+  },
+  "dependencies": {
+    "@nodert-win10-au/windows.foundation": "^0.4.4",
+    "@nodert-win10-au/windows.media": "^0.4.4",
+    "@nodert-win10-au/windows.media.playback": "^0.4.4",
+    "@nodert-win10-au/windows.storage.streams": "^0.4.4",
+    "custom-electron-titlebar": "^3.2.2-hotfix62",
+    "discord-rpc": "^3.1.0"
+  }
+}
