@@ -12,10 +12,15 @@
   "author": "Nickolas Høyer-Larsen",
   "license": "ISC",
   "build": {
+    "productName": "yousee.musik",
+    "appId": "yousee.musik",
     "win": {
       "target": "appx",
       "icon": "assets/logo.png",
       "publisherName": "Nickolas Høyer-Larsen"
+    },
+    "directories": {
+      "buildResources": "assets"
     },
     "appx": {
       "applicationId": "yousee.musik",
